@@ -1,0 +1,69 @@
+Algoritmo Listas_Arrays
+	Definir n, i Como Entero
+	Definir nombre Como Caracter
+	
+	
+	Escribir "Elegir una opcion"
+	Escribir "1: Listas"
+	Escribir "2: Array Unidimensionales"
+	Escribir "3: Array Multidimensionales"
+	Leer opciones
+	Segun opciones Hacer
+		1:
+			Dimension lista[10]
+			Escribir "Ingrese los nombres: "
+			cant<-0
+			Leer nombre
+			Mientras nombre<>"" Hacer
+				cant<-cant+1
+				lista[cant]<-nombre
+				Repetir
+					Leer nombre
+					se_repite<-Falso
+					Para i<-1 Hasta cant Hacer
+						Si nombre=lista[i] Entonces
+							se_repite<-Verdadero
+						FinSi
+					FinPara
+				Hasta Que No se_repite
+				
+			FinMientras
+			Escribir "La lista ordenada es:"
+			Para i<-1 Hasta cant Hacer
+				Escribir "   ",lista[i]
+			FinPara
+		2:
+			Dimension ciudades[5];
+			
+			ciudades[1] = "Madrid";
+			ciudades[2] = "Sevilla";
+			ciudades[3] = "Zaragoza";
+			ciudades[4] = "Galicia";
+			ciudades[5] = "Barcelona";
+			
+			Para fila<-1 Hasta 5 Con Paso 1 Hacer
+				escribir "En la fila [",fila,"] es " ciudades[fila];
+			FinPara
+		3:
+			dimension num[3,3];
+			
+			num[1,1]=1;
+			num[1,2]=2;
+			num[1,3]=3;
+			num[2,1]=4;
+			num[2,2]=5;
+			num[2,3]=6;
+			num[3,1]=7;
+			num[3,2]=8;
+			num[3,3]=9;
+			
+			Para columna<-1 Hasta 3 Con Paso 1 Hacer
+				Para fila<-1 Hasta 3 Con Paso 1 Hacer
+					escribir "columna [",columna ,"] fila [", fila,"] es " num[columna,fila];
+				FinPara
+			FinPara
+		De Otro Modo:
+			
+	Fin Segun
+	
+FinAlgoritmo
