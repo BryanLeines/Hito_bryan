@@ -1,0 +1,48 @@
+Algoritmo Login_cuenta
+	Definir n,i,m, num, num1, x Como Entero
+	Definir contraseña Como Caracter
+	n=0
+	m <- 1
+	Mientras m<=3 Hacer
+		Escribir 'Ingrese contraseña'
+		Leer contraseña
+		Si contraseña=='Hito1' Entonces
+			Escribir 'Contraseña correcta'
+			m <- 4
+			Escribir "Elige una opción";
+			Escribir "1: Suma";
+			Escribir "2: Par o impar";
+			
+			Leer opciones;
+			Segun opciones Hacer
+				1:
+					Escribir "Ingrese el primer número"
+					Leer num
+					Escribir "Ingrese el segundo número" 
+					Leer num1
+					n<-num+num1
+					Escribir "El resultado es: ", n
+				2:
+					Escribir "Ingresar cantidad de números"
+					Leer x
+					
+					Para i<-1 Hasta x Hacer
+						Si i%2=0 Entonces
+							Escribir "El número ",i, " es par "
+						SiNo
+							Escribir "El número ",i, " es impar "
+						FinSi
+				
+					FinPara
+			FinSegun
+		SiNo
+			Escribir 'Error de contraseña'
+			Si m==3 Entonces
+				Escribir 'Has terminado con los intentos'
+			SiNo
+				Escribir 'La contraseña es incorrecta'
+			FinSi
+			m <- m+1
+		FinSi
+	FinMientras
+FinAlgoritmo
