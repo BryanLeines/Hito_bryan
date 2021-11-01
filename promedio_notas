@@ -1,0 +1,38 @@
+Algoritmo promedio_notas
+	Definir n, i, m Como Real
+	Definir prom Como Real
+	Definir nombre, materia Como Caracter
+	Definir prom2 Como Real
+	Definir aprob Como Logico
+	prom=0
+	n=0
+	
+	Escribir "Nombre del alumno:"
+	Leer nombre 
+	Escribir "Numero de letras " Longitud(nombre)
+	Escribir "La primera letras es : " Subcadena(nombre, 1, 1)
+	
+	Escribir "Ingresar materias:"
+	Leer m
+	
+	Para i<-1 Hasta m Hacer
+		Escribir "Nombre de la materia:"
+		Leer materia
+		Escribir "Ingresa la notas: "
+		Leer n
+		prom<-prom+n
+		
+	FinPara
+	
+	prom<-prom/m
+	
+	Si prom>=5 Entonces
+		aprob=Verdadero;
+		Escribir "Aprobado ",aprob
+	SiNo
+		aprob=Falso;
+		Escribir "Aprobado ",aprob
+	FinSi
+	
+	Escribir "El promedio de las notas: ",prom
+FinAlgoritmo
