@@ -1,6 +1,7 @@
 Algoritmo Login_cuenta
 	Definir n,i,m, num, num1, x Como Entero
 	Definir contraseña Como Caracter
+	Definir opciones Como Entero
 	n=0
 	m <- 1
 	Mientras m<=3 Hacer
@@ -32,7 +33,7 @@ Algoritmo Login_cuenta
 						SiNo
 							Escribir "El número ",i, " es impar "
 						FinSi
-				
+						
 					FinPara
 			FinSegun
 		SiNo
