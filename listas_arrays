@@ -1,6 +1,8 @@
 Algoritmo Listas_Arrays
-	Definir n, i Como Entero
-	Definir nombre Como Caracter
+	Definir n, i, opciones, fila, num, columna, cant Como Entero
+	Definir nombre, ciudades, lista Como Caracter
+	Definir se_repite Como logico
+	
 	
 	
 	Escribir "Elegir una opcion"
